@@ -9,44 +9,108 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "AppBaseNavigationController.h"
+#import "XGPush.h"
+#import "APSConfig.h"
+#import "XGSetting.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //基础业务配置
+    [self basicServiceConfiguration:launchOptions];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MainViewController * mainVC = [[MainViewController alloc]init];
     AppBaseNavigationController * nav = [[AppBaseNavigationController alloc]initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    
+    
     return YES;
 }
-
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+#pragma mark 基础业务配置
+- (void) basicServiceConfiguration:(NSDictionary * )launchOptions{
+    //注册设备
+    [self registerForPush];
+    //初始化 XGPush
+    [XGPush startApp:kAPSAppID appKey:kAPSAppKey];
+//    
+//    NSDictionary * notificationDic = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+//    if (notificationDic) {
+//        [ApplicationService setApplicationStartUpTrigger:ApplicationStartUpTriggerNotification];
+//    }
+   
 }
-
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+#pragma mark ------------------------------------------------------------ 推送相关 -----------------------------------------------------------------------
+#pragma mark 注册设备
+- (void) registerForPush{
+    if (kIOS8_0_OR_LATER) {
+        //Types
+        UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+        
+        //Actions
+        UIMutableUserNotificationAction *acceptAction = [[UIMutableUserNotificationAction alloc] init];
+        
+        acceptAction.identifier = @"ACCEPT_IDENTIFIER";
+        acceptAction.title = @"Accept";
+        
+        acceptAction.activationMode = UIUserNotificationActivationModeForeground;
+        acceptAction.destructive = NO;
+        acceptAction.authenticationRequired = NO;
+        
+        //Categories
+        UIMutableUserNotificationCategory *inviteCategory = [[UIMutableUserNotificationCategory alloc] init];
+        
+        inviteCategory.identifier = @"INVITE_CATEGORY";
+        
+        [inviteCategory setActions:@[acceptAction] forContext:UIUserNotificationActionContextDefault];
+        
+        [inviteCategory setActions:@[acceptAction] forContext:UIUserNotificationActionContextMinimal];
+        
+        NSSet *categories = [NSSet setWithObjects:inviteCategory, nil];
+        
+        
+        UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes:types categories:categories];
+        
+        [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+        
+        
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }else{
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    }
 }
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+#pragma mark 设备注册回调
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    //注册设备
+    void (^successBlock)(void) = ^(void){
+        //成功之后的处理
+        MyLog(@"------- 注册设备成功");
+    };
+    
+    void (^errorBlock)(void) = ^(void){
+        //失败之后的处理
+        MyLog(@"------- 注册设备失败");
+    };
+    NSString * deviceTokenStr = [XGPush registerDevice: deviceToken];
+    //注册设备到XG服务端
+    [XGPush registerDevice:deviceToken successCallback:successBlock errorCallback:errorBlock];
+    MyLog(@"---- deviceTokenStr:%@",deviceTokenStr);
 }
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+#pragma mark 设备注册失败回调
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSString *error_str = [NSString stringWithFormat: @"%@", error];
+    MyLog(@"Failed to get token, error:%@", error_str);
 }
-
-- (void)applicationWillTerminate:(UIApplication *)application
+#pragma mark 接收到通知消息回调
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    //在此处理接收到的消息。
+    MyLog(@"Receive remote notification : %@",userInfo);
 }
-
 @end

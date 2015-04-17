@@ -59,6 +59,14 @@
 		C4AC1D931AE0BEE80052B952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D7B1AE0BEE80052B952 /* UIKit.framework */; };
 		C4AC1D9B1AE0BEE80052B952 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4AC1D991AE0BEE80052B952 /* InfoPlist.strings */; };
 		C4AC1D9D1AE0BEE80052B952 /* CuncaoxinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC1D9C1AE0BEE80052B952 /* CuncaoxinTests.m */; };
+		C4BAB7E41AE0C672005EE819 /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7E01AE0C672005EE819 /* libXG-SDK.a */; };
+		C4BAB7E51AE0C672005EE819 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = C4BAB7E11AE0C672005EE819 /* ReleaseNotes.txt */; };
+		C4BAB7E71AE0C698005EE819 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7E61AE0C698005EE819 /* CFNetwork.framework */; };
+		C4BAB7E91AE0C69F005EE819 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7E81AE0C69F005EE819 /* SystemConfiguration.framework */; };
+		C4BAB7EB1AE0C6A8005EE819 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7EA1AE0C6A8005EE819 /* CoreTelephony.framework */; };
+		C4BAB7ED1AE0C6AE005EE819 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7EC1AE0C6AE005EE819 /* libz.dylib */; };
+		C4BAB7EF1AE0C6C4005EE819 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7EE1AE0C6C4005EE819 /* Security.framework */; };
+		C4BAB7F31AE0CAF8005EE819 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BAB7F21AE0CAF8005EE819 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +180,17 @@
 		C4AC1D981AE0BEE80052B952 /* CuncaoxinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CuncaoxinTests-Info.plist"; sourceTree = "<group>"; };
 		C4AC1D9A1AE0BEE80052B952 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C4AC1D9C1AE0BEE80052B952 /* CuncaoxinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuncaoxinTests.m; sourceTree = "<group>"; };
+		C4BAB7E01AE0C672005EE819 /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libXG-SDK.a"; sourceTree = "<group>"; };
+		C4BAB7E11AE0C672005EE819 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
+		C4BAB7E21AE0C672005EE819 /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
+		C4BAB7E31AE0C672005EE819 /* XGSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSetting.h; sourceTree = "<group>"; };
+		C4BAB7E61AE0C698005EE819 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C4BAB7E81AE0C69F005EE819 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C4BAB7EA1AE0C6A8005EE819 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C4BAB7EC1AE0C6AE005EE819 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C4BAB7EE1AE0C6C4005EE819 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C4BAB7F11AE0C7A8005EE819 /* APSConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APSConfig.h; sourceTree = "<group>"; };
+		C4BAB7F21AE0CAF8005EE819 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +198,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BAB7F31AE0CAF8005EE819 /* libsqlite3.dylib in Frameworks */,
+				C4BAB7EF1AE0C6C4005EE819 /* Security.framework in Frameworks */,
+				C4BAB7ED1AE0C6AE005EE819 /* libz.dylib in Frameworks */,
+				C4BAB7EB1AE0C6A8005EE819 /* CoreTelephony.framework in Frameworks */,
+				C4BAB7E91AE0C69F005EE819 /* SystemConfiguration.framework in Frameworks */,
+				C4BAB7E71AE0C698005EE819 /* CFNetwork.framework in Frameworks */,
+				C4BAB7E41AE0C672005EE819 /* libXG-SDK.a in Frameworks */,
 				C42A94141AE0C08F00E3708A /* libicucore.dylib in Frameworks */,
 				C4AC1D7A1AE0BEE80052B952 /* CoreGraphics.framework in Frameworks */,
 				C4AC1D7C1AE0BEE80052B952 /* UIKit.framework in Frameworks */,
@@ -305,6 +331,7 @@
 		C42A93FD1AE0BFD200E3708A /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C4BAB7DF1AE0C672005EE819 /* XG_v2_2_0 */,
 				C42A94151AE0C0E300E3708A /* MJExtension */,
 				C42A940F1AE0BFF800E3708A /* RegExp */,
 				C42A940B1AE0BFE800E3708A /* MBProgressHUD */,
@@ -421,6 +448,12 @@
 		C4AC1D761AE0BEE80052B952 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4BAB7F21AE0CAF8005EE819 /* libsqlite3.dylib */,
+				C4BAB7EE1AE0C6C4005EE819 /* Security.framework */,
+				C4BAB7EC1AE0C6AE005EE819 /* libz.dylib */,
+				C4BAB7EA1AE0C6A8005EE819 /* CoreTelephony.framework */,
+				C4BAB7E81AE0C69F005EE819 /* SystemConfiguration.framework */,
+				C4BAB7E61AE0C698005EE819 /* CFNetwork.framework */,
 				C42A94131AE0C08F00E3708A /* libicucore.dylib */,
 				C4AC1D771AE0BEE80052B952 /* Foundation.framework */,
 				C4AC1D791AE0BEE80052B952 /* CoreGraphics.framework */,
@@ -433,6 +466,7 @@
 		C4AC1D7D1AE0BEE80052B952 /* Cuncaoxin */ = {
 			isa = PBXGroup;
 			children = (
+				C4BAB7F01AE0C791005EE819 /* Macro */,
 				C42A94381AE0C0FD00E3708A /* ViewControllers */,
 				C42A93FD1AE0BFD200E3708A /* Lib */,
 				C42A926F1AE0BF3A00E3708A /* General */,
@@ -471,6 +505,25 @@
 				C4AC1D991AE0BEE80052B952 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4BAB7DF1AE0C672005EE819 /* XG_v2_2_0 */ = {
+			isa = PBXGroup;
+			children = (
+				C4BAB7E01AE0C672005EE819 /* libXG-SDK.a */,
+				C4BAB7E11AE0C672005EE819 /* ReleaseNotes.txt */,
+				C4BAB7E21AE0C672005EE819 /* XGPush.h */,
+				C4BAB7E31AE0C672005EE819 /* XGSetting.h */,
+			);
+			path = XG_v2_2_0;
+			sourceTree = "<group>";
+		};
+		C4BAB7F01AE0C791005EE819 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				C4BAB7F11AE0C7A8005EE819 /* APSConfig.h */,
+			);
+			path = Macro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +601,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BAB7E51AE0C672005EE819 /* ReleaseNotes.txt in Resources */,
 				C4AC1D821AE0BEE80052B952 /* InfoPlist.strings in Resources */,
 				C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */,
 				C4AC1D8A1AE0BEE80052B952 /* Images.xcassets in Resources */,
@@ -728,6 +782,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
 				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -741,6 +799,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
 				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
