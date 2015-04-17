@@ -86,26 +86,25 @@
     //注册设备
     void (^successBlock)(void) = ^(void){
         //成功之后的处理
-        [LJAlertView alert:@"注册设备成功"];
+       // [LJAlertView alert:@"注册设备成功"];
         MyLog(@"------- 注册设备成功");
     };
     
     void (^errorBlock)(void) = ^(void){
-         [LJAlertView alert:@"注册设备失败"];
+       //[LJAlertView alert:@"注册设备失败"];
         //失败之后的处理
         MyLog(@"------- 注册设备失败");
     };
     NSString * deviceTokenStr = [XGPush registerDevice: deviceToken];
     //注册设备到XG服务端
     [XGPush registerDevice:deviceToken successCallback:successBlock errorCallback:errorBlock];
-    [LJAlertView alert:[NSString stringWithFormat:@"---- deviceTokenStr:%@",deviceTokenStr]];
+  //  [LJAlertView alert:[NSString stringWithFormat:@"---- deviceTokenStr:%@",deviceTokenStr]];
     MyLog(@"---- deviceTokenStr:%@",deviceTokenStr);
 }
 #pragma mark 设备注册失败回调
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     NSString *error_str = [NSString stringWithFormat: @"%@", error];
     [LJAlertView alert:[NSString stringWithFormat:@"Failed to get token, error:%@", error_str]];
-  
 }
 #pragma mark 接收到通知消息回调
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo

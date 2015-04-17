@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUJ-qo-ZKC">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <rect key="frame" x="0.0" y="2" width="320" height="566"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
             </subviews>
@@ -26,7 +26,7 @@
                 <constraint firstItem="rUJ-qo-ZKC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BRl-dr-vQ5"/>
                 <constraint firstAttribute="bottom" secondItem="rUJ-qo-ZKC" secondAttribute="bottom" id="CoT-PH-XDv"/>
                 <constraint firstAttribute="trailing" secondItem="rUJ-qo-ZKC" secondAttribute="trailing" id="FkA-Ci-to0"/>
-                <constraint firstItem="rUJ-qo-ZKC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jvZ-BH-cT7"/>
+                <constraint firstItem="rUJ-qo-ZKC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="2" id="jvZ-BH-cT7"/>
             </constraints>
             <point key="canvasLocation" x="322" y="452"/>
         </view>
