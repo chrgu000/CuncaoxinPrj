@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4AC1D781AE0BEE80052B952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D771AE0BEE80052B952 /* Foundation.framework */; };
+		C4AC1D7A1AE0BEE80052B952 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D791AE0BEE80052B952 /* CoreGraphics.framework */; };
+		C4AC1D7C1AE0BEE80052B952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D7B1AE0BEE80052B952 /* UIKit.framework */; };
+		C4AC1D821AE0BEE80052B952 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4AC1D801AE0BEE80052B952 /* InfoPlist.strings */; };
+		C4AC1D841AE0BEE80052B952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC1D831AE0BEE80052B952 /* main.m */; };
+		C4AC1D881AE0BEE80052B952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC1D871AE0BEE80052B952 /* AppDelegate.m */; };
+		C4AC1D8A1AE0BEE80052B952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AC1D891AE0BEE80052B952 /* Images.xcassets */; };
+		C4AC1D911AE0BEE80052B952 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D901AE0BEE80052B952 /* XCTest.framework */; };
+		C4AC1D921AE0BEE80052B952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D771AE0BEE80052B952 /* Foundation.framework */; };
+		C4AC1D931AE0BEE80052B952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D7B1AE0BEE80052B952 /* UIKit.framework */; };
+		C4AC1D9B1AE0BEE80052B952 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4AC1D991AE0BEE80052B952 /* InfoPlist.strings */; };
+		C4AC1D9D1AE0BEE80052B952 /* CuncaoxinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AC1D9C1AE0BEE80052B952 /* CuncaoxinTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4AC1D941AE0BEE80052B952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AC1D6C1AE0BEE80052B952 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4AC1D731AE0BEE80052B952;
+			remoteInfo = Cuncaoxin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4AC1D741AE0BEE80052B952 /* Cuncaoxin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuncaoxin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AC1D771AE0BEE80052B952 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C4AC1D791AE0BEE80052B952 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C4AC1D7B1AE0BEE80052B952 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C4AC1D7F1AE0BEE80052B952 /* Cuncaoxin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cuncaoxin-Info.plist"; sourceTree = "<group>"; };
+		C4AC1D811AE0BEE80052B952 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4AC1D831AE0BEE80052B952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4AC1D851AE0BEE80052B952 /* Cuncaoxin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cuncaoxin-Prefix.pch"; sourceTree = "<group>"; };
+		C4AC1D861AE0BEE80052B952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4AC1D871AE0BEE80052B952 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4AC1D891AE0BEE80052B952 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C4AC1D8F1AE0BEE80052B952 /* CuncaoxinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuncaoxinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AC1D901AE0BEE80052B952 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C4AC1D981AE0BEE80052B952 /* CuncaoxinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CuncaoxinTests-Info.plist"; sourceTree = "<group>"; };
+		C4AC1D9A1AE0BEE80052B952 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4AC1D9C1AE0BEE80052B952 /* CuncaoxinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuncaoxinTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4AC1D711AE0BEE80052B952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC1D7A1AE0BEE80052B952 /* CoreGraphics.framework in Frameworks */,
+				C4AC1D7C1AE0BEE80052B952 /* UIKit.framework in Frameworks */,
+				C4AC1D781AE0BEE80052B952 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AC1D8C1AE0BEE80052B952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC1D911AE0BEE80052B952 /* XCTest.framework in Frameworks */,
+				C4AC1D931AE0BEE80052B952 /* UIKit.framework in Frameworks */,
+				C4AC1D921AE0BEE80052B952 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4AC1D6B1AE0BEE80052B952 = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D7D1AE0BEE80052B952 /* Cuncaoxin */,
+				C4AC1D961AE0BEE80052B952 /* CuncaoxinTests */,
+				C4AC1D761AE0BEE80052B952 /* Frameworks */,
+				C4AC1D751AE0BEE80052B952 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4AC1D751AE0BEE80052B952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D741AE0BEE80052B952 /* Cuncaoxin.app */,
+				C4AC1D8F1AE0BEE80052B952 /* CuncaoxinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AC1D761AE0BEE80052B952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D771AE0BEE80052B952 /* Foundation.framework */,
+				C4AC1D791AE0BEE80052B952 /* CoreGraphics.framework */,
+				C4AC1D7B1AE0BEE80052B952 /* UIKit.framework */,
+				C4AC1D901AE0BEE80052B952 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4AC1D7D1AE0BEE80052B952 /* Cuncaoxin */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D861AE0BEE80052B952 /* AppDelegate.h */,
+				C4AC1D871AE0BEE80052B952 /* AppDelegate.m */,
+				C4AC1D891AE0BEE80052B952 /* Images.xcassets */,
+				C4AC1D7E1AE0BEE80052B952 /* Supporting Files */,
+			);
+			path = Cuncaoxin;
+			sourceTree = "<group>";
+		};
+		C4AC1D7E1AE0BEE80052B952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D7F1AE0BEE80052B952 /* Cuncaoxin-Info.plist */,
+				C4AC1D801AE0BEE80052B952 /* InfoPlist.strings */,
+				C4AC1D831AE0BEE80052B952 /* main.m */,
+				C4AC1D851AE0BEE80052B952 /* Cuncaoxin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4AC1D961AE0BEE80052B952 /* CuncaoxinTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D9C1AE0BEE80052B952 /* CuncaoxinTests.m */,
+				C4AC1D971AE0BEE80052B952 /* Supporting Files */,
+			);
+			path = CuncaoxinTests;
+			sourceTree = "<group>";
+		};
+		C4AC1D971AE0BEE80052B952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4AC1D981AE0BEE80052B952 /* CuncaoxinTests-Info.plist */,
+				C4AC1D991AE0BEE80052B952 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4AC1D731AE0BEE80052B952 /* Cuncaoxin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AC1DA01AE0BEE80052B952 /* Build configuration list for PBXNativeTarget "Cuncaoxin" */;
+			buildPhases = (
+				C4AC1D701AE0BEE80052B952 /* Sources */,
+				C4AC1D711AE0BEE80052B952 /* Frameworks */,
+				C4AC1D721AE0BEE80052B952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cuncaoxin;
+			productName = Cuncaoxin;
+			productReference = C4AC1D741AE0BEE80052B952 /* Cuncaoxin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4AC1D8E1AE0BEE80052B952 /* CuncaoxinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AC1DA31AE0BEE80052B952 /* Build configuration list for PBXNativeTarget "CuncaoxinTests" */;
+			buildPhases = (
+				C4AC1D8B1AE0BEE80052B952 /* Sources */,
+				C4AC1D8C1AE0BEE80052B952 /* Frameworks */,
+				C4AC1D8D1AE0BEE80052B952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AC1D951AE0BEE80052B952 /* PBXTargetDependency */,
+			);
+			name = CuncaoxinTests;
+			productName = CuncaoxinTests;
+			productReference = C4AC1D8F1AE0BEE80052B952 /* CuncaoxinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4AC1D6C1AE0BEE80052B952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com.js.cuncaoxin;
+				TargetAttributes = {
+					C4AC1D8E1AE0BEE80052B952 = {
+						TestTargetID = C4AC1D731AE0BEE80052B952;
+					};
+				};
+			};
+			buildConfigurationList = C4AC1D6F1AE0BEE80052B952 /* Build configuration list for PBXProject "Cuncaoxin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4AC1D6B1AE0BEE80052B952;
+			productRefGroup = C4AC1D751AE0BEE80052B952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4AC1D731AE0BEE80052B952 /* Cuncaoxin */,
+				C4AC1D8E1AE0BEE80052B952 /* CuncaoxinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4AC1D721AE0BEE80052B952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC1D821AE0BEE80052B952 /* InfoPlist.strings in Resources */,
+				C4AC1D8A1AE0BEE80052B952 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AC1D8D1AE0BEE80052B952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC1D9B1AE0BEE80052B952 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4AC1D701AE0BEE80052B952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC1D881AE0BEE80052B952 /* AppDelegate.m in Sources */,
+				C4AC1D841AE0BEE80052B952 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AC1D8B1AE0BEE80052B952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AC1D9D1AE0BEE80052B952 /* CuncaoxinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4AC1D951AE0BEE80052B952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4AC1D731AE0BEE80052B952 /* Cuncaoxin */;
+			targetProxy = C4AC1D941AE0BEE80052B952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4AC1D801AE0BEE80052B952 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4AC1D811AE0BEE80052B952 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C4AC1D991AE0BEE80052B952 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4AC1D9A1AE0BEE80052B952 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4AC1D9E1AE0BEE80052B952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4AC1D9F1AE0BEE80052B952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4AC1DA11AE0BEE80052B952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
+				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C4AC1DA21AE0BEE80052B952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
+				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C4AC1DA41AE0BEE80052B952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cuncaoxin.app/Cuncaoxin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CuncaoxinTests/CuncaoxinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C4AC1DA51AE0BEE80052B952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cuncaoxin.app/Cuncaoxin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
+				INFOPLIST_FILE = "CuncaoxinTests/CuncaoxinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4AC1D6F1AE0BEE80052B952 /* Build configuration list for PBXProject "Cuncaoxin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AC1D9E1AE0BEE80052B952 /* Debug */,
+				C4AC1D9F1AE0BEE80052B952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AC1DA01AE0BEE80052B952 /* Build configuration list for PBXNativeTarget "Cuncaoxin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AC1DA11AE0BEE80052B952 /* Debug */,
+				C4AC1DA21AE0BEE80052B952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4AC1DA31AE0BEE80052B952 /* Build configuration list for PBXNativeTarget "CuncaoxinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AC1DA41AE0BEE80052B952 /* Debug */,
+				C4AC1DA51AE0BEE80052B952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4AC1D6C1AE0BEE80052B952 /* Project object */;
+}
