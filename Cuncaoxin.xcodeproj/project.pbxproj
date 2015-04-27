@@ -168,6 +168,8 @@
 		C42A943F1AE0C14200E3708A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C42A94421AE0C39500E3708A /* AppBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBaseNavigationController.h; sourceTree = "<group>"; };
 		C42A94431AE0C39500E3708A /* AppBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBaseNavigationController.m; sourceTree = "<group>"; };
+		C454128F1AEE6A2400406C01 /* distribution.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = distribution.p12; sourceTree = "<group>"; };
+		C45412901AEE6A9D00406C01 /* aps_distribution.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_distribution.p12; sourceTree = "<group>"; };
 		C48C94581AEE349700353F3C /* 相关账号.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "相关账号.txt"; sourceTree = "<group>"; };
 		C48C94591AEE36DC00353F3C /* cuncaoxin_develop.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cuncaoxin_develop.p12; sourceTree = "<group>"; };
 		C48C945A1AEE37C300353F3C /* aps_develop.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_develop.p12; sourceTree = "<group>"; };
@@ -456,6 +458,8 @@
 		C48C94571AEE347600353F3C /* 证书 */ = {
 			isa = PBXGroup;
 			children = (
+				C454128F1AEE6A2400406C01 /* distribution.p12 */,
+				C45412901AEE6A9D00406C01 /* aps_distribution.p12 */,
 				C48C945A1AEE37C300353F3C /* aps_develop.p12 */,
 				C48C94591AEE36DC00353F3C /* cuncaoxin_develop.p12 */,
 			);
