@@ -40,7 +40,8 @@
     self.leftNavigationBarButtonType = AppNavBarIconTypeBack;
 }
 - (void)onClickNavgationBarLeftBtn:(UIButton *)btn withNavigationBarBtnType:(NSInteger)navigationBarBtnType{
-    if (_remoteSpecifiedUrl) {
+    //说明此时 是远程推送的url正在显示在第一页
+    if (_remoteSpecifiedUrl && ![_webview canGoBack]) {
         
         _remoteSpecifiedUrl = nil;
         [_webview removeFromSuperview];
