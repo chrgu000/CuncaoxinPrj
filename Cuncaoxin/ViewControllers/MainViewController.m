@@ -10,7 +10,7 @@
 #import "NJKWebViewProgressView.h"
 #import "NJKWebViewProgress.h"
 @interface MainViewController ()<UIWebViewDelegate, NJKWebViewProgressDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *webview;
+@property (strong, nonatomic) IBOutlet UIWebView *webview;
 
 @end
 
@@ -21,7 +21,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.leftNavigationBarButtonType = AppNavBarIconTypeBack;
+   
     self.navigationBarTitle = @"江苏寸草心教育";
     _progressProxy = [[NJKWebViewProgress alloc] init];
     _webview.delegate=_progressProxy;
@@ -30,13 +30,32 @@
     
     _progressView = [[NJKWebViewProgressView alloc] initWithFrame:CGRectMake(0,0,kScreenWidth, 2)];
     [self.view addSubview:_progressView];
-    
-    [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.lkwzs.com/index.php?token=tqgcob1426137232&g=Wap&a=index&m=Index"]]];
+
+    if (_remoteSpecifiedUrl) {
+        [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_remoteSpecifiedUrl]]];
+        
+    }else{
+        [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.lkwzs.com/index.php?token=tqgcob1426137232&g=Wap&a=index&m=Index"]]];
+    }
+    self.leftNavigationBarButtonType = AppNavBarIconTypeBack;
 }
 - (void)onClickNavgationBarLeftBtn:(UIButton *)btn withNavigationBarBtnType:(NSInteger)navigationBarBtnType{
-    if ([_webview canGoBack]) {
-        [_webview goBack];
+    if (_remoteSpecifiedUrl) {
+        
+        _remoteSpecifiedUrl = nil;
+        [_webview removeFromSuperview];
+        _webview = nil;
+        _webview = [[UIWebView alloc]initWithFrame:CGRectMake(0, 2, kScreenWidth, kScreenHeight-62)];
+        [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.lkwzs.com/index.php?token=tqgcob1426137232&g=Wap&a=index&m=Index"]]];
+        _webview.delegate =_progressProxy;
+        [self.view addSubview:_webview];
+        
+    }else{
+        if ([_webview canGoBack]) {
+            [_webview goBack];
+        }
     }
+    
 }
 #pragma mark ------------------------------------------ NJKWebViewProgressDelegate 代理
 -(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
@@ -47,4 +66,5 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     MyLog(@"webViewD didFailLoadWithError:%@",error);
 }
+
 @end

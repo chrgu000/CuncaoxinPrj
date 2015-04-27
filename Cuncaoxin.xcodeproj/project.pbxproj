@@ -173,6 +173,8 @@
 		C45412941AEE6BE700406C01 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		C45412951AEE6D4000406C01 /* aps_distribution.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_distribution.p12; sourceTree = "<group>"; };
 		C45412961AEE6D4000406C01 /* aps_develop.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_develop.p12; sourceTree = "<group>"; };
+		C45412971AEE6DA500406C01 /* aps_develop.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = aps_develop.pem; sourceTree = "<group>"; };
+		C45412981AEE6DA500406C01 /* aps_distribution.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = aps_distribution.pem; sourceTree = "<group>"; };
 		C48C94581AEE349700353F3C /* 相关账号.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "相关账号.txt"; sourceTree = "<group>"; };
 		C49850ED1AE5FAF700FD8980 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
 		C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
@@ -459,6 +461,8 @@
 		C48C94571AEE347600353F3C /* 证书 */ = {
 			isa = PBXGroup;
 			children = (
+				C45412971AEE6DA500406C01 /* aps_develop.pem */,
+				C45412981AEE6DA500406C01 /* aps_distribution.pem */,
 				C45412951AEE6D4000406C01 /* aps_distribution.p12 */,
 				C45412961AEE6D4000406C01 /* aps_develop.p12 */,
 				C45412941AEE6BE700406C01 /* readme.txt */,
@@ -837,8 +841,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jie liu (P7QD4W2SE7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jie liu (P7QD4W2SE7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen Hui (3UKB62JW22)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen Hui (3UKB62JW22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
 				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
@@ -847,7 +851,7 @@
 					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bf641947-fde4-45ec-8476-ba0f8573010d";
+				PROVISIONING_PROFILE = "67b19161-aeff-43fc-9cd7-e436ecd64001";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -857,7 +861,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jie liu (P7QD4W2SE7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen Hui (3UKB62JW22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
 				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
@@ -866,7 +870,7 @@
 					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bf641947-fde4-45ec-8476-ba0f8573010d";
+				PROVISIONING_PROFILE = "67b19161-aeff-43fc-9cd7-e436ecd64001";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

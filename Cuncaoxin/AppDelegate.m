@@ -16,11 +16,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSDictionary * remoteDic = launchOptions[@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+    NSString * zixunUrl = nil;
+    if (remoteDic) {
+        for (NSString * key in remoteDic.allKeys) {
+            if ([[key lowercaseString] isEqualToString:@"zixundizhi"]) {
+                zixunUrl = remoteDic[key];
+                break;
+            }
+        }
+    }
+    
     //基础业务配置
     [self basicServiceConfiguration:launchOptions];
-
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MainViewController * mainVC = [[MainViewController alloc]init];
+    if (zixunUrl) {
+        mainVC.remoteSpecifiedUrl = zixunUrl;
+    }
     AppBaseNavigationController * nav = [[AppBaseNavigationController alloc]initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     self.window.backgroundColor = [UIColor whiteColor];
@@ -110,7 +124,19 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    NSString * zixunUrl = nil;
+    for (NSString * key in userInfo.allKeys) {
+        if ([[key lowercaseString] isEqualToString:@"zixundizhi"]) {
+            zixunUrl = userInfo[key];
+            break;
+        }
+    }
+    //应用内接收到推送后 不做处理
+    if (zixunUrl) {
+        
+    }
+    NSLog(@"%@",userInfo);
     //在此处理接收到的消息。
-    [LJAlertView alert:[NSString stringWithFormat:@"接收到的消息:%@", userInfo]];
+   // [LJAlertView alert:[NSString stringWithFormat:@"接收到的消息:%@", userInfo]];
 }
 @end
