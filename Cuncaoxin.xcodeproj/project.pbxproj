@@ -47,6 +47,8 @@
 		C42A94401AE0C14200E3708A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A943E1AE0C14200E3708A /* MainViewController.m */; };
 		C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42A943F1AE0C14200E3708A /* MainViewController.xib */; };
 		C42A94441AE0C39500E3708A /* AppBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A94431AE0C39500E3708A /* AppBaseNavigationController.m */; };
+		C49850F01AE5FAF700FD8980 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */; };
+		C49850F11AE5FAF700FD8980 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49850EF1AE5FAF700FD8980 /* WelcomeVC.xib */; };
 		C4AC1D781AE0BEE80052B952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D771AE0BEE80052B952 /* Foundation.framework */; };
 		C4AC1D7A1AE0BEE80052B952 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D791AE0BEE80052B952 /* CoreGraphics.framework */; };
 		C4AC1D7C1AE0BEE80052B952 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D7B1AE0BEE80052B952 /* UIKit.framework */; };
@@ -166,6 +168,9 @@
 		C42A943F1AE0C14200E3708A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C42A94421AE0C39500E3708A /* AppBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBaseNavigationController.h; sourceTree = "<group>"; };
 		C42A94431AE0C39500E3708A /* AppBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBaseNavigationController.m; sourceTree = "<group>"; };
+		C49850ED1AE5FAF700FD8980 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
+		C49850EF1AE5FAF700FD8980 /* WelcomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeVC.xib; sourceTree = "<group>"; };
 		C4AC1D741AE0BEE80052B952 /* Cuncaoxin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuncaoxin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AC1D771AE0BEE80052B952 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C4AC1D791AE0BEE80052B952 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -418,6 +423,9 @@
 				C42A943D1AE0C14200E3708A /* MainViewController.h */,
 				C42A943E1AE0C14200E3708A /* MainViewController.m */,
 				C42A943F1AE0C14200E3708A /* MainViewController.xib */,
+				C49850ED1AE5FAF700FD8980 /* WelcomeVC.h */,
+				C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */,
+				C49850EF1AE5FAF700FD8980 /* WelcomeVC.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -623,6 +631,7 @@
 				C4AC1D821AE0BEE80052B952 /* InfoPlist.strings in Resources */,
 				C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */,
 				C4AC1D8A1AE0BEE80052B952 /* Images.xcassets in Resources */,
+				C49850F11AE5FAF700FD8980 /* WelcomeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +657,7 @@
 				C42A94301AE0C0E300E3708A /* MJIvar.m in Sources */,
 				C42A94401AE0C14200E3708A /* MainViewController.m in Sources */,
 				C42A93911AE0BF3A00E3708A /* UIButton+LJ.m in Sources */,
+				C49850F01AE5FAF700FD8980 /* WelcomeVC.m in Sources */,
 				C42A94361AE0C0E300E3708A /* NSObject+MJKeyValue.m in Sources */,
 				C42A93901AE0BF3A00E3708A /* UIApplication+LJ.m in Sources */,
 				C42A942E1AE0C0E300E3708A /* MJConst.m in Sources */,
