@@ -118,7 +118,7 @@
 #pragma mark 设备注册失败回调
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     NSString *error_str = [NSString stringWithFormat: @"%@", error];
-    [LJAlertView alert:[NSString stringWithFormat:@"Failed to get token, error:%@", error_str]];
+//    [LJAlertView alert:[NSString stringWithFormat:@"Failed to get token, error:%@", error_str]];
 }
 #pragma mark 接收到通知消息回调
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
