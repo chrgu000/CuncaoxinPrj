@@ -10,7 +10,7 @@
 #define Cuncaoxin_APSConfig_h
 
 //即 ACCESS ID
-#define kAPSAppID 2200104133
+#define kAPSAppID 2200104357
 //即 ACCESS KEY
-#define kAPSAppKey @"I4KF7ZUU663V"
+#define kAPSAppKey @"IU2PR64J58NY"
 #endif
