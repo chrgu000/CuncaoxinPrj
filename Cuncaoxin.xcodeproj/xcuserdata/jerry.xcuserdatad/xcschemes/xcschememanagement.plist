@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Cuncaoxin copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Cuncaoxin.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>C46256F71AEF34E400A67DE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4AC1D731AE0BEE80052B952</key>
 		<dict>
 			<key>primary</key>

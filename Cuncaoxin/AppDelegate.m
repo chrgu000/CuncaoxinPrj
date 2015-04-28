@@ -46,6 +46,7 @@
 - (void) basicServiceConfiguration:(NSDictionary * )launchOptions{
     //注册设备
     [self registerForPush];
+    
     //初始化 XGPush
     [XGPush startApp:kAPSAppID appKey:kAPSAppKey];
     

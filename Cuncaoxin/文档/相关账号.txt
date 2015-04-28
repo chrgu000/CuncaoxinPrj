@@ -21,3 +21,6 @@ wijefhwhpqvmbfmg
 
 bmob
 账号密码：Cuncaoxinedu@163.com / cuncaoxin
+
+
+openssl pkcs12 -in aps_ep_distribution.p12 -out aps_ep_distribution.pem -nodes

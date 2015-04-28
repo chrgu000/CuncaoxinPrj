@@ -10,7 +10,7 @@
 #define Cuncaoxin_APSConfig_h
 
 //即 ACCESS ID
-#define kAPSAppID 2200104357
+#define kAPSAppID ([[NSBundle mainBundle].bundleIdentifier isEqualToString:@"com.js.cuncaoxin.Cuncaoxin"]?2200104357:2200107278)
 //即 ACCESS KEY
-#define kAPSAppKey @"IU2PR64J58NY"
+#define kAPSAppKey ([[NSBundle mainBundle].bundleIdentifier isEqualToString:@"com.js.cuncaoxin.Cuncaoxin"]?@"IU2PR64J58NY":@"I22XA7X8UC2C")
 #endif
