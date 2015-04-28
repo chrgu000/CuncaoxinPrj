@@ -50,7 +50,6 @@
                                                       kLJAlertViewParamKeyButtonTitles:@[@"立即下载"],
                                                       kLJAlertViewParamKeyButtonCallbackBlocks:@[completionBlock]
                                                       }];
-         
             }else{
                 [LJAlertView showTwoSelectionAlertView:formatVersionDes title:[NSString stringWithFormat:@"发现新版本 (%@)",versionModel.versionNo] firstSelectionTitle:@"以后再说" secondSelectionTitle:@"立即下载" firstSelectionBlock:^{
                     MyLog(@"以后再说");
