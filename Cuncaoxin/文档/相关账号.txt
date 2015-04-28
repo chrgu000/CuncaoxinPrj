@@ -11,16 +11,10 @@ Cuncaoxinedu@163.com   密码：cuncaoxin
 Cuncaoxinedu@163.com  密码：Cuncaoxin2015
 
 
-
-发票抬头：盐城市寸草心企业管理培训中心
-发票地址：江苏省盐城市亭湖区解放南路58号中建大厦6F
-订单号: W579395194
-wijefhwhpqvmbfmg
-
-陈辉手机：13390686203
-
 bmob
 账号密码：Cuncaoxinedu@163.com / cuncaoxin
 
 
 openssl pkcs12 -in aps_ep_distribution.p12 -out aps_ep_distribution.pem -nodes
+
+企业账号打的包 放到了 蒲公英上  账号 是 cjsliuj@163.com
