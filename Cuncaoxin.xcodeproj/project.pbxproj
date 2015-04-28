@@ -209,6 +209,10 @@
 		C46256E61AEF219100A67DE3 /* VersionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionModel.m; sourceTree = "<group>"; };
 		C46256E71AEF219100A67DE3 /* VersionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionService.h; sourceTree = "<group>"; };
 		C46256E81AEF219100A67DE3 /* VersionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionService.m; sourceTree = "<group>"; };
+		C46256F31AEF324300A67DE3 /* aps_ep_develop.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_ep_develop.p12; sourceTree = "<group>"; };
+		C46256F41AEF32DE00A67DE3 /* aps_ep_distribution.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_ep_distribution.p12; sourceTree = "<group>"; };
+		C46256F51AEF330E00A67DE3 /* distribution_estay_ep.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = distribution_estay_ep.p12; sourceTree = "<group>"; };
+		C46256F61AEF34C000A67DE3 /* develop_estay_ep.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = develop_estay_ep.p12; sourceTree = "<group>"; };
 		C48C94581AEE349700353F3C /* 相关账号.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "相关账号.txt"; sourceTree = "<group>"; };
 		C49850ED1AE5FAF700FD8980 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
 		C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
@@ -540,6 +544,10 @@
 		C48C94571AEE347600353F3C /* 证书 */ = {
 			isa = PBXGroup;
 			children = (
+				C46256F61AEF34C000A67DE3 /* develop_estay_ep.p12 */,
+				C46256F51AEF330E00A67DE3 /* distribution_estay_ep.p12 */,
+				C46256F41AEF32DE00A67DE3 /* aps_ep_distribution.p12 */,
+				C46256F31AEF324300A67DE3 /* aps_ep_develop.p12 */,
 				C45412971AEE6DA500406C01 /* aps_develop.pem */,
 				C45412981AEE6DA500406C01 /* aps_distribution.pem */,
 				C45412951AEE6D4000406C01 /* aps_distribution.p12 */,
