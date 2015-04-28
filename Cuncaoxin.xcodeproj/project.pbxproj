@@ -47,6 +47,7 @@
 		C42A94401AE0C14200E3708A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A943E1AE0C14200E3708A /* MainViewController.m */; };
 		C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42A943F1AE0C14200E3708A /* MainViewController.xib */; };
 		C42A94441AE0C39500E3708A /* AppBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A94431AE0C39500E3708A /* AppBaseNavigationController.m */; };
+		C42E33B81AEF8F3F006A200C /* 寸草心1024(1).png in Resources */ = {isa = PBXBuildFile; fileRef = C42E33B71AEF8F3F006A200C /* 寸草心1024(1).png */; };
 		C46256DA1AEF215400A67DE3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C46256C81AEF215400A67DE3 /* AFHTTPRequestOperation.m */; };
 		C46256DB1AEF215400A67DE3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C46256CA1AEF215400A67DE3 /* AFHTTPRequestOperationManager.m */; };
 		C46256DC1AEF215400A67DE3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C46256CC1AEF215400A67DE3 /* AFHTTPSessionManager.m */; };
@@ -249,6 +250,7 @@
 		C42A943F1AE0C14200E3708A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		C42A94421AE0C39500E3708A /* AppBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBaseNavigationController.h; sourceTree = "<group>"; };
 		C42A94431AE0C39500E3708A /* AppBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBaseNavigationController.m; sourceTree = "<group>"; };
+		C42E33B71AEF8F3F006A200C /* 寸草心1024(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "寸草心1024(1).png"; sourceTree = "<group>"; };
 		C454128F1AEE6A2400406C01 /* distribution.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = distribution.p12; sourceTree = "<group>"; };
 		C45412911AEE6B8100406C01 /* develop.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = develop.p12; sourceTree = "<group>"; };
 		C45412941AEE6BE700406C01 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
@@ -652,6 +654,7 @@
 		C4AC1D6B1AE0BEE80052B952 = {
 			isa = PBXGroup;
 			children = (
+				C42E33B71AEF8F3F006A200C /* 寸草心1024(1).png */,
 				C4AC1D7D1AE0BEE80052B952 /* Cuncaoxin */,
 				C4AC1D961AE0BEE80052B952 /* CuncaoxinTests */,
 				C4AC1D761AE0BEE80052B952 /* Frameworks */,
@@ -876,6 +879,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42E33B81AEF8F3F006A200C /* 寸草心1024(1).png in Resources */,
 				C4BAB7E51AE0C672005EE819 /* ReleaseNotes.txt in Resources */,
 				C4AC1D821AE0BEE80052B952 /* InfoPlist.strings in Resources */,
 				C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */,
@@ -1064,7 +1068,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Estay(China) Co.Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
-				INFOPLIST_FILE = "Cuncaoxin copy-Info.plist";
+				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
@@ -1084,7 +1088,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Estay(China) Co.Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
-				INFOPLIST_FILE = "Cuncaoxin copy-Info.plist";
+				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
