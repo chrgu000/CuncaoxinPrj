@@ -12,10 +12,52 @@
 #import "XGPush.h"
 #import "APSConfig.h"
 #import "XGSetting.h"
+#import "AFNetworking.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+//    AFHTTPRequestOperationManager  *manager = [AFHTTPRequestOperationManager manager];
+//    NSError * tmpError;
+//    NSMutableURLRequest * req=[[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:@"http://xiaoenai.meiriq.com/api/setScore" parameters:@{@"last_score":@(8192)} error:&tmpError];
+//    NSDictionary * cookie1Dic = @{
+//                                  NSHTTPCookieDomain:@"",
+//                                  NSHTTPCookieExpires:[NSDate dateWithTimeIntervalSinceNow:60*60],
+//                                  NSHTTPCookiePath:@"/",
+//                                  NSHTTPCookieName:@"PHPSESSID",
+//                                  
+//                                  //NSHTTPCookieValue:@"shdvilh7ugabv98mv15q43ml06"//hq
+//                                  NSHTTPCookieValue:@"vpvk15ls6dvihhqa8cdreo9rd4"//lj
+//                                  };
+//    NSDictionary * cookie2Dic = @{
+//                                  NSHTTPCookieDomain:@"",
+//                                  NSHTTPCookieExpires:[NSDate dateWithTimeIntervalSinceNow:60*60],
+//                                  NSHTTPCookiePath:@"/",
+//                                  NSHTTPCookieName:@"SERVER_ID",
+//                                  NSHTTPCookieValue:@"1871d63d-d091e0af"//lj
+//                                  //NSHTTPCookieValue:@"1871d63d-bba1fb29"//hq
+//                                  };
+//    
+//    NSHTTPCookie * cookie1 =[[NSHTTPCookie alloc] initWithProperties:cookie1Dic];
+//    NSHTTPCookie * cookie2 =[[NSHTTPCookie alloc] initWithProperties:cookie2Dic];
+//    
+//    NSDictionary *headers=[NSHTTPCookie requestHeaderFieldsWithCookies:@[cookie1,cookie2]];
+//    
+//     [req setValue:[headers objectForKey:@"Cookie"] forHTTPHeaderField:@"Cookie"];
+//     [req setValue:@"http://xiaoenai.meiriq.com/game/play/3" forHTTPHeaderField:@"Referer"];
+//     AFHTTPRequestOperation * requestOperation=  [manager HTTPRequestOperationWithRequest:req success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//         
+//         NSLog(@"服务器响应:%@",operation.responseString);
+//     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//         NSLog(@"ERROR 响应:%@  错误:%@",operation.responseString ,error);
+//     }];
+//    [requestOperation start];
+//    
+//    return YES;
+    
+    
+    
     NSDictionary * remoteDic = launchOptions[@"UIApplicationLaunchOptionsRemoteNotificationKey"];
     NSString * openUrl = nil;
     if (remoteDic) {

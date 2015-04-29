@@ -286,7 +286,6 @@
 		C46256F51AEF330E00A67DE3 /* distribution_estay_ep.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = distribution_estay_ep.p12; sourceTree = "<group>"; };
 		C46256F61AEF34C000A67DE3 /* develop_estay_ep.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = develop_estay_ep.p12; sourceTree = "<group>"; };
 		C46257441AEF34E400A67DE3 /* CuncaoxinEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuncaoxinEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C46257451AEF34E400A67DE3 /* Cuncaoxin copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Cuncaoxin copy-Info.plist"; path = "/Users/jerry/Desktop/XcodeWorkSpace/Cuncaoxin/Cuncaoxin copy-Info.plist"; sourceTree = "<absolute>"; };
 		C48C94581AEE349700353F3C /* 相关账号.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "相关账号.txt"; sourceTree = "<group>"; };
 		C49850ED1AE5FAF700FD8980 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
 		C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
@@ -659,7 +658,6 @@
 				C4AC1D961AE0BEE80052B952 /* CuncaoxinTests */,
 				C4AC1D761AE0BEE80052B952 /* Frameworks */,
 				C4AC1D751AE0BEE80052B952 /* Products */,
-				C46257451AEF34E400A67DE3 /* Cuncaoxin copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
