@@ -24,6 +24,16 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _animationImage =[UIImage imageNamed:@"launch_640x960"];
+    UIImageView * animationImgv = [[UIImageView alloc]initWithImage:_animationImage];
+    animationImgv.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+    [self.navigationController.view addSubview:animationImgv];
+    [UIView animateWithDuration:1.5 animations:^{
+        animationImgv.transform = CGAffineTransformMakeScale(1.3, 1.3);
+        animationImgv.alpha = 0;
+    } completion:^(BOOL finished) {
+        [animationImgv removeFromSuperview];
+    }];
     [VersionService request_versionInfoSucc:^(VersionModel *versionModel) {
         if (!versionModel.isActive) {
             return ;
