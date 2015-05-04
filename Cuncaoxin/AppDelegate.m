@@ -56,7 +56,7 @@
 //    
 //    return YES;
     
-    
+    MyLog(@"%@",[NSBundle mainBundle ].bundleIdentifier);
     
     NSDictionary * remoteDic = launchOptions[@"UIApplicationLaunchOptionsRemoteNotificationKey"];
     NSString * openUrl = nil;

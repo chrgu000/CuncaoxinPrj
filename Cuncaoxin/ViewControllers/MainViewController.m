@@ -25,6 +25,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _animationImage =[UIImage imageNamed:@"launch_640x960"];
+    if ((kScreenWidth-320.0)<1e-6 && (kScreenHeight - 480.0)<1e-6) {
+        _animationImage =[UIImage imageNamed:@"launch_640x960"];
+    }else if ((kScreenWidth-320.0)<1e-6 && (kScreenHeight - 568.0)<1e-6) {
+        _animationImage =[UIImage imageNamed:@"launch_640x1136"];
+    }else if ((kScreenWidth-375.0)<1e-6 && (kScreenHeight - 667.0)<1e-6) {
+        _animationImage =[UIImage imageNamed:@"launch_750x1334"];
+    }else if ((kScreenWidth-414.0)<1e-6 && (kScreenHeight - 736.0)<1e-6) {
+        _animationImage =[UIImage imageNamed:@"launch_1242x2208"];
+    }
     UIImageView * animationImgv = [[UIImageView alloc]initWithImage:_animationImage];
     animationImgv.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
     [self.navigationController.view addSubview:animationImgv];
