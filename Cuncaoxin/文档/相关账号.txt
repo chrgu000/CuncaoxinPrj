@@ -17,4 +17,4 @@ bmob
 
 openssl pkcs12 -in aps_ep_distribution.p12 -out aps_ep_distribution.pem -nodes
 
-企业账号打的包 放到了 蒲公英上  账号 是 cjsliuj@163.com
+企业账号打的包 下载地址：http://app.estay.com/cuncaoxin/down.html
