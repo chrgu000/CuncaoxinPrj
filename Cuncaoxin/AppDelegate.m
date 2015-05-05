@@ -178,12 +178,15 @@
     }
      MyLog(@"%@",userInfo);
     //应用内接收到推送后 不做处理
+    NSDictionary * apsDic = userInfo[@"aps"];
+    NSString * alert;
+    if (apsDic) {
+        alert = apsDic[@"alert"];
+    }
+    if (!alert) {
+        return;
+    }
     if (openUrl) {
-        NSDictionary * apsDic = userInfo[@"aps"];
-        NSString * alert;
-        if (apsDic) {
-            alert = apsDic[@"alert"];
-        }
         //在此处理接收到的消息。
         [LJAlertView showTwoSelectionAlertView:alert?alert:@"" title:@"您收到一条新的推送消息" firstSelectionTitle:@"不去了" secondSelectionTitle:@"去看看" firstSelectionBlock:^{
             
@@ -192,6 +195,8 @@
                                                                                                                      @"openurl":openUrl
                                                                                                                      }];
         }];
+    }else{
+        [LJAlertView alert:alert?alert:@"" title:@"您收到一条新的推送消息"];
     }
     
 }
