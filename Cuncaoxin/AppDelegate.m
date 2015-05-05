@@ -168,19 +168,31 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     //应用内接收到推送后 不做处理
-//    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-//    NSString * zixunUrl = nil;
-//    for (NSString * key in userInfo.allKeys) {
-//        if ([[key lowercaseString] isEqualToString:@"zixundizhi"]) {
-//            zixunUrl = userInfo[key];
-//            break;
-//        }
-//    }
-//    //应用内接收到推送后 不做处理
-//    if (zixunUrl) {
-//        
-//    }
-    //在此处理接收到的消息。
-   // [LJAlertView alert:[NSString stringWithFormat:@"接收到的消息:%@", userInfo]];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    NSString * openUrl = nil;
+    for (NSString * key in userInfo.allKeys) {
+        if ([[key lowercaseString] isEqualToString:@"zixundizhi"] || [[key lowercaseString] isEqualToString:@"openurl"]) {
+            openUrl = userInfo[key];
+            break;
+        }
+    }
+     MyLog(@"%@",userInfo);
+    //应用内接收到推送后 不做处理
+    if (openUrl) {
+        NSDictionary * apsDic = userInfo[@"aps"];
+        NSString * alert;
+        if (apsDic) {
+            alert = apsDic[@"alert"];
+        }
+        //在此处理接收到的消息。
+        [LJAlertView showTwoSelectionAlertView:alert?alert:@"" title:@"您收到一条新的推送消息" firstSelectionTitle:@"不去了" secondSelectionTitle:@"去看看" firstSelectionBlock:^{
+            
+        } secondSelectionBlock:^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"receivePushNotification" object:nil userInfo:@{
+                                                                                                                     @"openurl":openUrl
+                                                                                                                     }];
+        }];
+    }
+    
 }
 @end

@@ -24,6 +24,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivePushNotification:) name:@"receivePushNotification" object:nil];
     _animationImage =[UIImage imageNamed:@"launch_640x960"];
     if ((kScreenWidth-320.0)<1e-6 && (kScreenHeight - 480.0)<1e-6) {
         _animationImage =[UIImage imageNamed:@"launch_640x960"];
@@ -117,6 +118,13 @@
         }
     }
     
+}
+- (void)receivePushNotification:(NSNotification *)notification{
+   NSDictionary * userInfo = notification.userInfo;
+    NSString * openurl = userInfo[@"openurl"];
+    if (openurl) {
+        [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:openurl]]];
+    }
 }
 #pragma mark ------------------------------------------ NJKWebViewProgressDelegate 代理
 -(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress

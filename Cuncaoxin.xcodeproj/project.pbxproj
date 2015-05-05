@@ -1170,8 +1170,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Chen Hui (5QJWR95993)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chen Hui (5QJWR95993)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen Hui (3UKB62JW22)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen Hui (3UKB62JW22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
 				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
@@ -1181,7 +1181,7 @@
 					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ecf7e5af-70ed-4930-9658-3b54b5af03fb";
+				PROVISIONING_PROFILE = "67b19161-aeff-43fc-9cd7-e436ecd64001";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1191,8 +1191,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Chen Hui (5QJWR95993)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chen Hui (5QJWR95993)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chen Hui (3UKB62JW22)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen Hui (3UKB62JW22)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cuncaoxin/Cuncaoxin-Prefix.pch";
 				INFOPLIST_FILE = "Cuncaoxin/Cuncaoxin-Info.plist";
@@ -1202,7 +1202,7 @@
 					"$(PROJECT_DIR)/Cuncaoxin/Lib/XG_v2_2_0",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ecf7e5af-70ed-4930-9658-3b54b5af03fb";
+				PROVISIONING_PROFILE = "67b19161-aeff-43fc-9cd7-e436ecd64001";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
