@@ -55,7 +55,8 @@
 //    [requestOperation start];
 //    
 //    return YES;
-    
+    //清除角标
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     MyLog(@"%@",[NSBundle mainBundle ].bundleIdentifier);
     
     NSDictionary * remoteDic = launchOptions[@"UIApplicationLaunchOptionsRemoteNotificationKey"];
