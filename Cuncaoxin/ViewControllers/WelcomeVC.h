@@ -9,5 +9,5 @@
 #import "LJBaseViewController.h"
 
 @interface WelcomeVC : LJBaseViewController
-
+@property (nonatomic,strong) NSDictionary * launchOptions;
 @end

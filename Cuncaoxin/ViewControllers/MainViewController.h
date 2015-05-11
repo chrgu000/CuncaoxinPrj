@@ -14,6 +14,7 @@
 @property (nonatomic,copy) NSString * remoteSpecifiedUrl;
 
 @property (nonatomic,strong) UIImage * animationImage;
+@property (nonatomic,assign) BOOL needAnimation;
 ////指定要打开的url
 ////如果该参数存在 则在当前页面打开该网址
 //@property (nonatomic,copy) NSString * specifiedUrl;

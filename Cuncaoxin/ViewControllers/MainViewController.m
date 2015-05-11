@@ -35,15 +35,20 @@
     }else if ((kScreenWidth-414.0)<1e-6 && (kScreenHeight - 736.0)<1e-6) {
         _animationImage =[UIImage imageNamed:@"launch_1242x2208"];
     }
-    UIImageView * animationImgv = [[UIImageView alloc]initWithImage:_animationImage];
-    animationImgv.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-    [self.navigationController.view addSubview:animationImgv];
-    [UIView animateWithDuration:1.5 animations:^{
-        animationImgv.transform = CGAffineTransformMakeScale(1.3, 1.3);
-        animationImgv.alpha = 0;
-    } completion:^(BOOL finished) {
-        [animationImgv removeFromSuperview];
-    }];
+    if (_needAnimation) {
+        //动画
+        UIImageView * animationImgv = [[UIImageView alloc]initWithImage:_animationImage];
+        animationImgv.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+        [self.navigationController.view addSubview:animationImgv];
+        [UIView animateWithDuration:1.5 animations:^{
+            animationImgv.transform = CGAffineTransformMakeScale(1.3, 1.3);
+            animationImgv.alpha = 0;
+        } completion:^(BOOL finished) {
+            [animationImgv removeFromSuperview];
+        }];
+    }
+    
+    
     [VersionService request_versionInfoSucc:^(VersionModel *versionModel) {
         if (!versionModel.isActive) {
             return ;

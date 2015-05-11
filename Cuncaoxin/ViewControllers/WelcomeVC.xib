@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeVC">
             <connections>
+                <outlet property="ctnView" destination="866-xv-Z5C" id="vaa-at-Nly"/>
+                <outlet property="pageCtr" destination="plT-YV-ir2" id="ojs-fu-SmA"/>
+                <outlet property="scrv" destination="iDF-Eo-aSy" id="8yM-Fw-kkw"/>
+                <outlet property="startBtn" destination="Yxc-qR-iFd" id="aeB-II-WzO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,10 +18,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="plT-YV-ir2">
+                    <rect key="frame" x="140" y="433" width="39" height="37"/>
+                </pageControl>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDF-Eo-aSy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iDF-Eo-aSy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2A7-bP-HiX"/>
+                <constraint firstAttribute="bottom" secondItem="iDF-Eo-aSy" secondAttribute="bottom" id="HNT-bW-Ve4"/>
+                <constraint firstAttribute="trailing" secondItem="iDF-Eo-aSy" secondAttribute="trailing" id="OoU-qQ-2Zn"/>
+                <constraint firstItem="iDF-Eo-aSy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PG7-7A-sV8"/>
+                <constraint firstAttribute="bottom" secondItem="plT-YV-ir2" secondAttribute="bottom" constant="10" id="Pae-tE-caA"/>
+                <constraint firstAttribute="centerX" secondItem="plT-YV-ir2" secondAttribute="centerX" id="SyZ-u0-SvD"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="474" y="353"/>
+            <point key="canvasLocation" x="161" y="281"/>
         </view>
+        <view contentMode="scaleToFill" id="866-xv-Z5C">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="596" y="323"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yxc-qR-iFd">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="onclickStartBtn:" destination="-1" eventType="touchUpInside" id="T38-4e-5pm"/>
+            </connections>
+            <point key="canvasLocation" x="-188.5" y="546.5"/>
+        </button>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -12,7 +12,9 @@
 #import "XGPush.h"
 #import "APSConfig.h"
 #import "XGSetting.h"
+#import "WelcomeVC.h"
 #import "AFNetworking.h"
+#import "UIApplication+LJ.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -74,15 +76,25 @@
     [self basicServiceConfiguration:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    MainViewController * mainVC = [[MainViewController alloc]init];
-    if (openUrl) {
-        mainVC.remoteSpecifiedUrl = openUrl;
+    
+    
+    if ([UIApplication isFirstOpenOrFirstOpenAfterUpdated]) {
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+        WelcomeVC * welcomvc = [[WelcomeVC alloc]init];
+        welcomvc.launchOptions = launchOptions;
+        self.window.rootViewController = welcomvc;
+    }else{
+        MainViewController * mainVC = [[MainViewController alloc]init];
+        mainVC.needAnimation = YES;
+        if (openUrl) {
+            mainVC.remoteSpecifiedUrl = openUrl;
+        }
+        AppBaseNavigationController * nav = [[AppBaseNavigationController alloc]initWithRootViewController:mainVC];
+        self.window.rootViewController = nav;
     }
-    AppBaseNavigationController * nav = [[AppBaseNavigationController alloc]initWithRootViewController:mainVC];
-    self.window.rootViewController = nav;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 #pragma mark 基础业务配置
