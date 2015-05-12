@@ -17,4 +17,12 @@ bmob
 
 openssl pkcs12 -in aps_ep_distribution.p12 -out aps_ep_distribution.pem -nodes
 
+share sdk
+账号密码:cuncaoxinedu@163.com/000000
+
+
+微信开放平台
+账号/密码：cuncaoxindevelop@163.com/cuncaoxin
+
+
 企业账号打的包 下载地址：http://app.estay.com/cuncaoxin/down.html
