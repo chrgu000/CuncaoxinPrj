@@ -11,6 +11,7 @@
 #import "NJKWebViewProgress.h"
 #import "VersionService.h"
 #import "VersionModel.h"
+#import <ShareSDK/ShareSDK.h>
 #import "NSString+LJ.h"
 @interface MainViewController ()<UIWebViewDelegate, NJKWebViewProgressDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webview;
@@ -130,6 +131,39 @@
     if (openurl) {
         [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:openurl]]];
     }
+}
+#pragma mark 点击分享
+- (IBAction)onclickShare:(id)sender {
+    //构造分享内容
+    id<ISSContent> publishContent = [ShareSDK content:@"专业的教育信息提供平台"
+                                       defaultContent:@"专业的教育信息提供平台"
+                                                image:[ShareSDK imageWithPath:[[NSBundle mainBundle] pathForResource:@"icon_512" ofType:@"png"]]
+                                                title:@"寸草心教育"
+                                                  url:@"https://itunes.apple.com/us/app/cun-cao-xin-jiao-yu/id990104805"
+                                          description:@"这是一条测试信息"
+                                            mediaType:SSPublishContentMediaTypeNews];
+    //创建弹出菜单容器
+    id<ISSContainer> container = [ShareSDK container];
+    [container setIPadContainerWithView:sender arrowDirect:UIPopoverArrowDirectionUp];
+    
+    //弹出分享菜单
+    [ShareSDK showShareActionSheet:container
+                         shareList:nil
+                           content:publishContent
+                     statusBarTips:YES
+                       authOptions:nil
+                      shareOptions:nil
+                            result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                
+                                if (state == SSResponseStateSuccess)
+                                {
+                                    NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
+                                }
+                                else if (state == SSResponseStateFail)
+                                {
+                                    NSLog(NSLocalizedString(@"TEXT_ShARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
+                                }
+                            }];
 }
 #pragma mark ------------------------------------------ NJKWebViewProgressDelegate 代理
 -(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
