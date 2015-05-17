@@ -135,12 +135,12 @@
 #pragma mark 点击分享
 - (IBAction)onclickShare:(id)sender {
     //构造分享内容
-    id<ISSContent> publishContent = [ShareSDK content:@"专业的教育信息提供平台"
-                                       defaultContent:@"专业的教育信息提供平台"
-                                                image:[ShareSDK imageWithPath:[[NSBundle mainBundle] pathForResource:@"iconForShare" ofType:@"png"]]
+    id<ISSContent> publishContent = [ShareSDK content:@"您的教育问题解决专家"
+                                       defaultContent:@"您的教育问题解决专家"
+                                                image:[ShareSDK pngImageWithImage:[UIImage imageNamed:@"iconForShare"]]
                                                 title:@"寸草心教育"
                                                   url:@"https://itunes.apple.com/us/app/cun-cao-xin-jiao-yu/id990104805"
-                                          description:@"这是一条测试信息"
+                                          description:@"寸草心教育-您的教育问题解决专家"
                                             mediaType:SSPublishContentMediaTypeNews];
     //创建弹出菜单容器
     id<ISSContainer> container = [ShareSDK container];
