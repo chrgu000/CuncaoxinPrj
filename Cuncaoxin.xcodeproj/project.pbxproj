@@ -129,8 +129,6 @@
 		C462573F1AEF34E400A67DE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AC1D891AE0BEE80052B952 /* Images.xcassets */; };
 		C46257401AEF34E400A67DE3 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49850EF1AE5FAF700FD8980 /* WelcomeVC.xib */; };
 		C47F9A441B084E25005EF47E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C47F9A431B084E25005EF47E /* libstdc++.dylib */; };
-		C47F9A461B085105005EF47E /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = C47F9A451B085105005EF47E /* icon_512.png */; };
-		C47F9A471B085105005EF47E /* icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = C47F9A451B085105005EF47E /* icon_512.png */; };
 		C49850F01AE5FAF700FD8980 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */; };
 		C49850F11AE5FAF700FD8980 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49850EF1AE5FAF700FD8980 /* WelcomeVC.xib */; };
 		C4AC1D781AE0BEE80052B952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AC1D771AE0BEE80052B952 /* Foundation.framework */; };
@@ -325,7 +323,6 @@
 		C46256F61AEF34C000A67DE3 /* develop_estay_ep.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = develop_estay_ep.p12; sourceTree = "<group>"; };
 		C46257441AEF34E400A67DE3 /* CuncaoxinEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuncaoxinEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9A431B084E25005EF47E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		C47F9A451B085105005EF47E /* icon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_512.png; sourceTree = "<group>"; };
 		C48C94581AEE349700353F3C /* 相关账号.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "相关账号.txt"; sourceTree = "<group>"; };
 		C49850ED1AE5FAF700FD8980 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
 		C49850EE1AE5FAF700FD8980 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
@@ -801,7 +798,6 @@
 		C4AC1D7E1AE0BEE80052B952 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C47F9A451B085105005EF47E /* icon_512.png */,
 				C48C94561AEE345100353F3C /* 文档 */,
 				C4AC1D7F1AE0BEE80052B952 /* Cuncaoxin-Info.plist */,
 				C4AC1D801AE0BEE80052B952 /* InfoPlist.strings */,
@@ -1046,7 +1042,6 @@
 				C4B2BD4B1B018D160008CE6E /* ShareSDKLocalizable.strings in Resources */,
 				C462573C1AEF34E400A67DE3 /* ReleaseNotes.txt in Resources */,
 				C462573D1AEF34E400A67DE3 /* InfoPlist.strings in Resources */,
-				C47F9A471B085105005EF47E /* icon_512.png in Resources */,
 				C462573E1AEF34E400A67DE3 /* MainViewController.xib in Resources */,
 				C4B2BD571B018D160008CE6E /* WeiboSDK.bundle in Resources */,
 				C462573F1AEF34E400A67DE3 /* Images.xcassets in Resources */,
@@ -1064,7 +1059,6 @@
 				C4B2BD4A1B018D160008CE6E /* ShareSDKLocalizable.strings in Resources */,
 				C4BAB7E51AE0C672005EE819 /* ReleaseNotes.txt in Resources */,
 				C4AC1D821AE0BEE80052B952 /* InfoPlist.strings in Resources */,
-				C47F9A461B085105005EF47E /* icon_512.png in Resources */,
 				C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */,
 				C4B2BD561B018D160008CE6E /* WeiboSDK.bundle in Resources */,
 				C4AC1D8A1AE0BEE80052B952 /* Images.xcassets in Resources */,

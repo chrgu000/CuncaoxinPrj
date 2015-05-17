@@ -137,7 +137,7 @@
     //构造分享内容
     id<ISSContent> publishContent = [ShareSDK content:@"专业的教育信息提供平台"
                                        defaultContent:@"专业的教育信息提供平台"
-                                                image:[ShareSDK imageWithPath:[[NSBundle mainBundle] pathForResource:@"icon_512" ofType:@"png"]]
+                                                image:[ShareSDK imageWithPath:[[NSBundle mainBundle] pathForResource:@"iconForShare" ofType:@"png"]]
                                                 title:@"寸草心教育"
                                                   url:@"https://itunes.apple.com/us/app/cun-cao-xin-jiao-yu/id990104805"
                                           description:@"这是一条测试信息"
