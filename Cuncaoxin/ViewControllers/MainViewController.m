@@ -13,6 +13,7 @@
 #import "VersionModel.h"
 #import <ShareSDK/ShareSDK.h>
 #import "NSString+LJ.h"
+#import "UIImage+LJ.h"
 @interface MainViewController ()<UIWebViewDelegate, NJKWebViewProgressDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webview;
 
@@ -25,6 +26,14 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIImage * shareImg = [[UIImage imageNamed:@"shareImg"] imageWithScaleToSize:CGSizeMake(27,27)];
+
+    UIButton * shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    shareBtn.size = shareImg.size;
+    [shareBtn addTarget:self action:@selector(onclickShare:) forControlEvents:UIControlEventTouchUpInside];
+    [shareBtn setBackgroundImage:shareImg forState:UIControlStateNormal];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:shareBtn];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivePushNotification:) name:@"receivePushNotification" object:nil];
     _animationImage =[UIImage imageNamed:@"launch_640x960"];
     if ((kScreenWidth-320.0)<1e-6 && (kScreenHeight - 480.0)<1e-6) {
@@ -133,7 +142,7 @@
     }
 }
 #pragma mark 点击分享
-- (IBAction)onclickShare:(id)sender {
+- (void)onclickShare:(id)sender {
     //构造分享内容
     id<ISSContent> publishContent = [ShareSDK content:@"您的教育问题解决专家"
                                        defaultContent:@"您的教育问题解决专家"
