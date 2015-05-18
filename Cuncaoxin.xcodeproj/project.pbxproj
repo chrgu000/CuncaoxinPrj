@@ -47,6 +47,7 @@
 		C42A94401AE0C14200E3708A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A943E1AE0C14200E3708A /* MainViewController.m */; };
 		C42A94411AE0C14200E3708A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42A943F1AE0C14200E3708A /* MainViewController.xib */; };
 		C42A94441AE0C39500E3708A /* AppBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C42A94431AE0C39500E3708A /* AppBaseNavigationController.m */; };
+		C44A55191B099151000CFC89 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C47F9A431B084E25005EF47E /* libstdc++.dylib */; };
 		C46256DA1AEF215400A67DE3 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C46256C81AEF215400A67DE3 /* AFHTTPRequestOperation.m */; };
 		C46256DB1AEF215400A67DE3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C46256CA1AEF215400A67DE3 /* AFHTTPRequestOperationManager.m */; };
 		C46256DC1AEF215400A67DE3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C46256CC1AEF215400A67DE3 /* AFHTTPSessionManager.m */; };
@@ -391,6 +392,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44A55191B099151000CFC89 /* libstdc++.dylib in Frameworks */,
 				C46257301AEF34E400A67DE3 /* libsqlite3.dylib in Frameworks */,
 				C4B2BD5F1B018D160008CE6E /* ShareSDKFlatShareViewUI.framework in Frameworks */,
 				C4B2BD511B018D160008CE6E /* TencentOpenAPI.framework in Frameworks */,
