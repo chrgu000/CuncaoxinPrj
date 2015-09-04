@@ -31,7 +31,7 @@
 }
 + (NSString *) barButtonItemImgNameForType:(NSInteger)navBarBtnType{
     if (navBarBtnType ==AppNavBarIconTypeBack) {
-        return @"arrow_left_gray_nav";
+        return @"arrow_left_white_nav";
     }
     return @"";
 }

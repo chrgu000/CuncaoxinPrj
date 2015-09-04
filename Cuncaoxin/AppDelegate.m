@@ -112,9 +112,11 @@
             mainVC.remoteSpecifiedUrl = openUrl;
         }
         AppBaseNavigationController * nav = [[AppBaseNavigationController alloc]initWithRootViewController:mainVC];
+        nav.navigationBar.barTintColor = kColor(192, 26, 19, 1);
+        nav.navigationBar.tintColor = [UIColor whiteColor];
         self.window.rootViewController = nav;
     }
-
+    [UIApplication   sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

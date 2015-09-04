@@ -26,14 +26,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage * shareImg = [[UIImage imageNamed:@"shareImg"] imageWithScaleToSize:CGSizeMake(27,27)];
-
-    UIButton * shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    shareBtn.size = shareImg.size;
-    [shareBtn addTarget:self action:@selector(onclickShare:) forControlEvents:UIControlEventTouchUpInside];
-    [shareBtn setBackgroundImage:shareImg forState:UIControlStateNormal];
+    self.leftNavigationBarButtonType = AppNavBarIconTypeBack;
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:shareBtn];
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"分享" style:UIBarButtonItemStylePlain target:self action:@selector(onclickShare)];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivePushNotification:) name:@"receivePushNotification" object:nil];
     _animationImage =[UIImage imageNamed:@"launch_640x960"];
     if ((kScreenWidth-320.0)<1e-6 && (kScreenHeight - 480.0)<1e-6) {
@@ -99,6 +96,7 @@
         
     }];
     self.navigationBarTitle = @"江苏寸草心教育";
+    self.navigationBarTitleColor = [UIColor whiteColor];
     _progressProxy = [[NJKWebViewProgress alloc] init];
     _webview.delegate=_progressProxy;
     _progressProxy.webViewProxyDelegate = self;
@@ -136,7 +134,7 @@
     }
 }
 #pragma mark 点击分享
-- (void)onclickShare:(id)sender {
+- (void)onclickShare{
     //构造分享内容
     id<ISSContent> publishContent = [ShareSDK content:@"您的教育问题解决专家"
                                        defaultContent:@"您的教育问题解决专家"
@@ -147,7 +145,7 @@
                                             mediaType:SSPublishContentMediaTypeNews];
     //创建弹出菜单容器
     id<ISSContainer> container = [ShareSDK container];
-    [container setIPadContainerWithView:sender arrowDirect:UIPopoverArrowDirectionUp];
+    [container setIPhoneContainerWithViewController:self];
     
     //弹出分享菜单
     [ShareSDK showShareActionSheet:container
