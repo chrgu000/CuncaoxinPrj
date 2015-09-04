@@ -1,0 +1,35 @@
+
+信鸽推送服务后台：账号3176017262密码：cuncaoxin
+
+
+163 邮箱
+Cuncaoxinedu@163.com   密码：cuncaoxin
+
+
+
+开发者账号
+Cuncaoxinedu@163.com  密码：Cuncaoxin2015
+
+
+bmob
+账号密码：Cuncaoxinedu@163.com / cuncaoxin
+
+
+openssl pkcs12 -in aps_ep_distribution.p12 -out aps_ep_distribution.pem -nodes
+
+share sdk
+账号密码:cuncaoxinedu@163.com/000000
+app key :75bc7a48d7cc
+
+
+微信开放平台
+账号/密码：cuncaoxindevelop@163.com/cuncaoxin
+AppID：wx78c35372aa3ecf27
+AppSecret：1a2933ecbeee835f51347dc89bdb55ee
+
+
+腾讯开放平台：3176017262 / cuncaoxin
+APP ID:1104644834
+APP KEY:zsG8aT9JvL8MEcY5
+
+企业账号打的包 下载地址：http://app.estay.com/cuncaoxin/down.html
