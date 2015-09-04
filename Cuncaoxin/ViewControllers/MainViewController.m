@@ -31,7 +31,7 @@
     _progressView = [[NJKWebViewProgressView alloc] initWithFrame:CGRectMake(0,0,kScreenWidth, 2)];
     [self.view addSubview:_progressView];
     
-    [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.lkwzs.com/index.php?token=tqgcob1426137232&g=Wap&a=index&m=Index"]]];
+    [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.jsccx.com"]]];
 }
 - (void)onClickNavgationBarLeftBtn:(UIButton *)btn withNavigationBarBtnType:(NSInteger)navigationBarBtnType{
     if ([_webview canGoBack]) {
