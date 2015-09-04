@@ -80,6 +80,8 @@
     }
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
     AppBaseNavigationController * nav = [[AppBaseNavigationController alloc]initWithRootViewController:mainVC];
+    nav.navigationBar.barTintColor = kColor(192, 26, 19, 1);
+    nav.navigationBar.tintColor = [UIColor whiteColor];
     [UIApplication sharedApplication].keyWindow.rootViewController = nav;
 }
 @end

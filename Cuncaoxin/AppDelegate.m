@@ -119,6 +119,8 @@
     [UIApplication   sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 #pragma mark 基础业务配置
